@@ -1,0 +1,111 @@
+/* *{
+    font-family: Arial, Helvetica, sans-serif;
+} */
+h1{
+    color: aqua;
+}
+h2{
+  color: rgb(119, 0, 255);  
+}
+p{
+    color: blueviolet;
+}
+.div1{
+    height: 400px;
+    width: 400px;
+    /* background: linear-gradient(to left top, rgba(255,0,0) 20px, green); */
+    background: radial-gradient(#e66464, #94e591);
+}
+/* CSS Shadow */
+.heading1{
+    color: #94e591;
+    text-align: center;
+    font-size: 50px;
+    text-shadow: -5px -6px 5px lawngreen;
+}
+.heading2{
+    color: black;
+    margin: 0;
+}
+.box{
+    width: 400px;
+    height: 390px;
+    text-align: center;
+    margin: auto;
+    border: 1px solid rgb(0,0,0, 0.5);
+    box-shadow: 6px 6px 4px greenyellow,
+    -6px -6px 3px greenyellow;
+}
+.box img{
+    width: 100%;
+}
+
+/* CSS Sprite Image */
+.social{
+    width: 300px;
+    height: 200px;
+}
+
+/* CSS Transform */
+.heading3{
+    text-align: center;
+}
+.heading4{
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: 40%;
+}
+.box3{
+    height: 300px;
+    width: 250px;
+    background-color: #e66464;
+    color: black;
+    text-align: center;
+    margin: 100px auto;
+    position: relative;
+    /* transform: rotate(-45deg);
+    transform: scale(0.75);
+    transform: scaleX(2); 
+    transform: skew(40deg);
+    transform: skewY(35deg); */
+    transform: translate(0, 50px);
+}
+/* CSS Transition */
+.box4{
+    height: 400px;
+    width: 400px;
+    background-color: aquamarine;
+    margin: 100px auto;
+    /* transition: all;
+    transition-delay: 1ms;
+    transition-duration: 0.5s;
+    /* transition-timing-function: ease-out; 
+    transition-timing-function: cubic-bezier(0,0,1,.05); */
+    transition: all 0.5s linear;
+}
+.box4:hover{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgb(152, 235, 104);
+    transform: rotate(180deg);
+}
+/* CSS Animation */
+.box5{
+    height: 400px;
+    width: 400px;
+    background-color: rgb(38, 206, 136);
+    margin: 10px auto;
+    position: relative;
+    animation-name: square;
+    animation-duration: 4s;
+}
+@keyframes square{
+    /* from{ background-color: cadetblue; }
+    to { background-color: darkcyan;} */
+    0%{background-color: darkcyan;}
+    25%{background-color: rgb(156, 188, 197);}
+    50%{background-color: rgb(2, 0, 139);}
+    100%{background-color: rgba(180, 162, 0, 0.747);}
+}
